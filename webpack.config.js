@@ -3,6 +3,7 @@ var webpack = require('webpack');
 module.exports = {
   entry: [
     'webpack/hot/only-dev-server',
+    'webpack-dev-server/client?http://miaou.local:6969',
     "./js/app.js"
   ],
   output: {

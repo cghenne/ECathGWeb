@@ -17,7 +17,7 @@ let EcgLine = React.createClass({
   getEcg() {
     let ecg = [];
 
-    for (let i = 0; i < this.props.ecgValues.length; i = i + 3) {
+    for (let i = 0; i < this.props.ecgValues.length; i++) {
       ecg.push({x: i, y: -this.props.ecgValues[i]});
     }
 
@@ -30,11 +30,9 @@ let EcgLine = React.createClass({
         data={this.getEcg()}
         width={window.innerWidth}
         height={window.innerHeight}
-        interpolation="basis"
-
-      />
+        interpolation='basis' />
     );
-  }
+  },
 });
 
 module.exports = EcgLine;

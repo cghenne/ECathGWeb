@@ -4,7 +4,7 @@
   "description": "",
   "main": "webpack.config.js",
   "scripts": {
-    "start": "webpack-dev-server --hot --inline--progress --colors",
+    "start": "webpack-dev-server --host miaou.local --port 6969 --hot --inline--progress --colors",
     "build": "webpack --progress --colors"
   },
   "author": "",

@@ -54,7 +54,7 @@
 /******/ 	
 /******/ 	
 /******/ 	var hotApplyOnUpdate = true;
-/******/ 	var hotCurrentHash = "a635a6eaa4fa1809e71f"; // eslint-disable-line no-unused-vars
+/******/ 	var hotCurrentHash = "e4ec17f8903dc82bd479"; // eslint-disable-line no-unused-vars
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentParents = []; // eslint-disable-line no-unused-vars
 /******/ 	
@@ -28067,7 +28067,7 @@
 	  getEcg: function getEcg() {
 	    var ecg = [];
 
-	    for (var i = 0; i < this.props.ecgValues.length; i = i + 3) {
+	    for (var i = 0; i < this.props.ecgValues.length; i++) {
 	      ecg.push({ x: i, y: -this.props.ecgValues[i] });
 	    }
 
@@ -28079,9 +28079,7 @@
 	      data: this.getEcg(),
 	      width: window.innerWidth,
 	      height: window.innerHeight,
-	      interpolation: 'basis'
-
-	    });
+	      interpolation: 'basis' });
 	  }
 	});
 
